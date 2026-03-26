@@ -1,0 +1,6 @@
+RAVDESS/
+TESS/
+*.pkl
+*.wav
+__pycache__/
+.ipynb_checkpoints/
