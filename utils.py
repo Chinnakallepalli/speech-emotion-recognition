@@ -3,7 +3,12 @@ import numpy as np
 
 def extract_feature_logic(X, sample_rate):
     """Extracted logic to convert raw audio into the 182 features the model expects."""
+    
+    # Trim silence + pre-emphasis for real-world audio
+    X, _ = librosa.effects.trim(X, top_db=20)
+    X = librosa.effects.preemphasis(X)
     X = librosa.util.normalize(X)
+    
     result = np.array([])
     
     # MFCC
