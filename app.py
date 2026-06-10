@@ -30,6 +30,8 @@ def load_assets():
 
 model, scaler = load_assets()
 st.sidebar.write(librosa.__version__)
+import sklearn, numpy
+st.sidebar.write(np.__version__, sklearn.__version__)
 # --- MAIN INTERFACE ---
 st.title("🎙️ Speech Emotion Recognition System")
 st.markdown("Upload an audio clip to analyze the underlying emotional state using Machine Learning.")
