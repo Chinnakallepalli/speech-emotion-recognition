@@ -29,7 +29,7 @@ def load_assets():
     return m, s
 
 model, scaler = load_assets()
-
+st.sidebar.write(librosa.__version__)
 # --- MAIN INTERFACE ---
 st.title("🎙️ Speech Emotion Recognition System")
 st.markdown("Upload an audio clip to analyze the underlying emotional state using Machine Learning.")
