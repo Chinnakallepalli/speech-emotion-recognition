@@ -92,4 +92,4 @@ if uploaded_file:
 
 # --- FOOTER ---
 st.markdown("---")
-st.caption("Machine Learning Model trained on 182-dimensional acoustic feature vectors.")
+st.caption("Machine Learning Model trained on 224-dimensional acoustic feature vectors.")
